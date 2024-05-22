@@ -1,0 +1,16 @@
+<app-header></app-header>
+<p>home works!</p>
+
+<div *ngFor="let index of indices">
+    <select (change)="onSelectChange($event,index)">
+      <option value="" selected>-- Seleccione una opción --</option>
+      <option *ngFor="let sintoma of sintomas" [value]="sintoma">{{ sintoma }}</option>
+    </select>
+</div>
+<div *ngIf="respuesta">
+    <p>Respuesta: {{ respuesta }}</p>
+    <p>Enfermedad: {{ diagnostico }}</p>
+</div>
+<br>
+<button (click)="agregarSelect()">Agregar Select</button> <br>
+<button (click)="submitData()">Consultar</button>
