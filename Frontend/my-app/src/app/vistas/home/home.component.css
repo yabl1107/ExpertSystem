@@ -1,0 +1,232 @@
+  .left-box {
+    background-color: rgba(212, 212, 212, 0.5); /* Fondo blanco con transparencia */
+    backdrop-filter: blur(5px); /* Aplica un filtro de desenfoque al contenido detrás */
+    border-radius: 10px; /* Añade esquinas redondeadas al componente */
+    padding: 20px; /* Añade espacio interior al componente */
+    width: 75%;
+    min-height: 10rem;
+  }
+
+  .right-box {
+    background-color: rgba(255, 255, 255, 1); /* Fondo blanco con transparencia */
+    backdrop-filter: blur(5px); /* Aplica un filtro de desenfoque al contenido detrás */
+    border-radius: 2rem; /* Añade esquinas redondeadas al componente */
+    padding: 1rem; /* Añade espacio interior al componente */
+    width: 75%;
+    min-height: 20rem;
+  }
+
+  .container2 {
+
+    --s: 200px; /* control the size */
+    --c1: #414141;
+    --c2: #bebebe;
+    --c3: #ffffff;
+  
+    background: repeating-conic-gradient(
+          from 30deg,
+          #0000 0 120deg,
+          var(--c3) 0 180deg
+        )
+        calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+      repeating-conic-gradient(
+        from 30deg,
+        var(--c1) 0 60deg,
+        var(--c2) 0 120deg,
+        var(--c3) 0 180deg
+      );
+    background-size: var(--s) calc(var(--s) * 0.577);
+  }
+
+  .container3 {
+    height: 100%;
+    --s: 200px; /* control the size */
+    --c1: #1d1d1d;
+    --c2: #4e4f51;
+    --c3: #3c3c3c;
+  
+    background: repeating-conic-gradient(
+          from 30deg,
+          #0000 0 120deg,
+          var(--c3) 0 180deg
+        )
+        calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+      repeating-conic-gradient(
+        from 30deg,
+        var(--c1) 0 60deg,
+        var(--c2) 0 120deg,
+        var(--c3) 0 180deg
+      );
+    background-size: var(--s) calc(var(--s) * 0.577);
+  }
+  
+
+  .header {
+    border-bottom: 2px solid #c9c1c1;
+    max-height: 4rem;
+    min-height: 3rem;
+  }
+
+  .tittle-1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem; 
+    font-weight: 1;
+    text-align: center;
+  }
+
+  .tittle-2{
+    font-family: 'Avenir', sans-serif;
+    font-size: 1.1rem; 
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .tittle-3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem; 
+    text-align: left;
+  }
+
+  .linea-separadora {
+    width: 75%; /* Ancho de la línea separadora */
+    margin: 0 auto; /* Centrar la línea horizontalmente */
+    border-bottom: 1px solid black; /* Borde inferior */
+    margin-bottom: 1rem; /* Espacio entre la línea y el texto */
+}
+
+.s5 {
+  width: 75%; /* Ancho de la línea separadora */
+}
+
+/**/
+.btn {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #333; /* Cambio de color al pasar el cursor */
+}
+
+.btn2 {
+  background-color: rgb(153, 153, 153);
+  color: white;
+  border: none;
+  padding: 0.2rem 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn2:hover {
+  background-color: #ff0000; /* Cambio de color al pasar el cursor */
+}
+
+
+select {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: 1px solid gray;
+  padding: 0.3rem;
+  border-radius: 0.6rem;
+  font-size: 1rem;
+}
+
+select:hover {
+  border-color: #555;
+}
+
+select:focus {
+  outline: none;
+  border-color: #777;
+}
+
+
+.button {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: rgb(255, 69, 69);
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition-duration: .3s;
+  overflow: hidden;
+}
+
+.svgIcon {
+  width: 0.8rem;
+  transition-duration: .3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.button:hover {
+  width: 3rem;
+  border-radius: 1rem;
+
+}
+
+
+
+/*
+
+*/
+
+.cta {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
